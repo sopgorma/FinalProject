@@ -43,7 +43,5 @@ if pity == "win":
         totalCost = chanceCost + primoCost
         print("You still need ",chance," wishes or roughly $", chanceCost, "to begin the soft pity. You will need a max total of $", totalCost, "to obtain a 5-star character.")
         print("You are still in the pity so you have a 50/50 chance to obtain the banner character.", '\n', "If you lose, it will cost around $", costs, "to be guaranteed the next banner character. Good luck!")
-    else:
-        print("Invalid. Please try again")
 
 #These functions tell the user how many more wishes they need to obtain a 5-star character, whether banner or regular
