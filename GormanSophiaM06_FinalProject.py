@@ -17,7 +17,7 @@ pity = str(input("Did you previously 'win' or 'lose' your pity? (If you are unsu
 chance = int(input("Enter the amount of wishes made after obtaining last 5-star character: "))
 #Every 75-90 wishes, the user will be put into a "pity system".
 #This pity system will give the user a 50/50 chance of either "winning" a banner character, 
-#or losing, and obtaining a regular 5-star character. If a character wins, they stay in the pity for the next 90 wishes.
+#or losing, and obtaining a standard/regular 5-star character. If a character wins, they stay in the pity for the next 90 wishes.
 #If they lose, their next banner character is guaranteed.
 
 if pity == "lose":
