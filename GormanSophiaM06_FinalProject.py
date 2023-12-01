@@ -24,24 +24,24 @@ if pity == "lose":
     if chance >= 75:
         chance = 90 - chance
         chanceCost = float((chance/15)*primoCost)
-        print("You will get the banner character within the next ",chance," wish(es)  or $", chanceCost,". Congratulations!")
+        print("You will get the banner character within the next ",chance," wish(es)  or $", f'{chanceCost:.2f}',". Congratulations!")
     elif chance < 75:
         chance = 75 - chance
         chanceCost = float((chance/15)*primoCost)
         totalCost = chanceCost + primoCost
-        print("You still need ",chance," wishes or roughly $",chanceCost," to get into the pity draw.," '\n', "After that, you will obtain the banner character within 15 wishes. You need to spend a max total of $", totalCost, ". You got this!")
+        print("You still need ",chance," wishes or roughly $",f'{chanceCost:.2f}'," to get into the pity draw.", '\n', "After that, you will obtain the banner character within 15 wishes. You need to spend a max total of $", f'{totalCost:.2f}', ". You got this!")
 
 if pity == "win":
     if chance >= 75:
         chance = 90 - chance
         chanceCost = chanceCost = float((chance/15)*primoCost)
-        print("You're still in the pity! You need ", chance, " wishes or  $",chanceCost," to see if you win.")
+        print("You're still in the pity! You need ", chance, " wishes or  $",f'{chanceCost:.2f}'," to see if you win.")
         print("If you lose, it will cost around $", costs, "to be guaranteed the next banner character.")
     elif chance < 75:
         chance = 75 - chance
         chanceCost = float((chance/15)*primoCost)
         totalCost = chanceCost + primoCost
-        print("You still need ",chance," wishes or roughly $", chanceCost, "to begin the soft pity. You will need a max total of $", totalCost, "to obtain a 5-star character.")
+        print("You still need ",chance," wishes or roughly $", f'{chanceCost:.2f}', "to begin the soft pity. You will need a max total of $", f'{totalCost:.2f}', "to obtain a 5-star character.")
         print("You are still in the pity so you have a 50/50 chance to obtain the banner character.", '\n', "If you lose, it will cost around $", costs, "to be guaranteed the next banner character. Good luck!")
 
-#These functions tell the user how many more wishes they need to obtain a 5-star character, whether banner or standard
+#These functions tell the user how many more wishes and money they need to obtain a 5-star character, whether banner or standard
