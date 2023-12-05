@@ -14,14 +14,6 @@ import tkinter as tk
 
 window = tk.Tk()
 
-frame = tk.Frame(master=window)
-entry1 = tk.Entry(master=frame, width=25)
-wish = tk.Label(master=frame, text="")
-f_value = tk.Label(master=frame, text="\N{DEGREE FAHRENHEIT}")
-entry1.grid(row=0, column=0, sticky="e")
-wish.grid(row=0, column=0, sticky="w")
-f_value.grid(row=0, column=1, sticky="e")
-
 class IMGUI(EasyFrame):
     def __init__(self):
         EasyFrame.__init__(self, title="~GENSHIN PITY~", width=500, height=500)
@@ -29,7 +21,7 @@ class IMGUI(EasyFrame):
         frame = tk.Frame(master=window)
         entry1 = tk.Entry(master=frame, width=25)
         wish = tk.Label(master=frame, text="")
-        f_value = tk.Label(master=frame, text="\N{DEGREE FAHRENHEIT}")
+        f_value = tk.Label(master=frame, text="")
         entry1.grid(row=0, column=0, sticky="e")
         wish.grid(row=0, column=0, sticky="w")
         f_value.grid(row=0, column=1, sticky="e")
