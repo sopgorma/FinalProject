@@ -1,6 +1,6 @@
 """
 Sophia Gorman
-Final Progject - Genshin Pity
+Final Project - Genshin Pity
 11/30/23
 
 """
